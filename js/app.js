@@ -1,6 +1,16 @@
 $(function () {
     console.log("pure loaded");
 
+    $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) { 
+               //change yes to no
+               $('.pure-menu-heading').html('developer | explorer | creator');
+           } else {
+               //set h1 text to yes
+               $('.pure-menu-heading').html('danielle lara gourgey');
+           }
+       });
+
     var menu = document.getElementById('menu'),
         WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
 
