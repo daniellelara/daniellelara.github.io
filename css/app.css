@@ -1,0 +1,127 @@
+@import url(http://db.onlinewebfonts.com/c/5d22bd0816f911a4c90e5d8661157ef9?family=Microsoft+Yi+Baiti);
+
+@font-face {font-family: "Microsoft Yi Baiti";
+    src: url("http://db.onlinewebfonts.com/t/5d22bd0816f911a4c90e5d8661157ef9.eot");
+    src: url("http://db.onlinewebfonts.com/t/5d22bd0816f911a4c90e5d8661157ef9.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/5d22bd0816f911a4c90e5d8661157ef9.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/5d22bd0816f911a4c90e5d8661157ef9.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/5d22bd0816f911a4c90e5d8661157ef9.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/5d22bd0816f911a4c90e5d8661157ef9.svg#Microsoft Yi Baiti") format("svg");
+  }
+
+body {
+  background-color: #eee9e8;
+  font-family: "Microsoft Yi Baiti";
+}
+nav {
+  /*box-shadow: 5px 5px 5px #E1DADA;*/
+}
+.pure-menu {
+  font-family: "Microsoft Yi Baiti";
+  background-color: #dddcdb;
+
+}
+.custom-wrapper {
+    font-family: "Microsoft Yi Baiti";
+    background-color: #dddcdb;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 2.1em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+    height: 50px;
+    font-size: 20px;
+}
+
+.custom-wrapper.open {
+    font-family: "Microsoft Yi Baiti";
+    height: 14em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.portfolio {
+  background-image: linear-gradient(to bottom,#D7D3D5 0,#d5cdcd 100%);
+  width: 100%;
+  height: 500px;
+  box-shadow: 3px -3px 3px #E7E4E4;
+}
+
+.about {
+  background-image: linear-gradient(to bottom,#EFEBED 0,#F6F0F0 100%);
+  width: 100%;
+  height: 400px;
+  box-shadow: 3px -3px 3px #E1DADA;
+  margin-top: 60px;
+}
+
+.contact {
+  background-image: linear-gradient(to bottom,#D7D3D5 0,#d5cdcd 100%);
+  width: 100%;
+  height: 200px;
+  box-shadow: 3px -3px 3px #E1DADA;
+  margin-top: 60px;
+}
+
+@media (max-width: 47.999em) {
+
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+}
