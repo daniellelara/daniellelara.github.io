@@ -181,7 +181,7 @@ nav {
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: visible; 
-    opacity: 0.75;
+    opacity: 0.9;
     -webkit-transform-origin: 0 0;
 }
 .front {
@@ -254,14 +254,21 @@ nav {
 }
 
 .fa {
-  font-size: 70px;
+  font-size: 100px;
   color: grey;
 }
 
+.fa:hover {
+  color: blue;
+}
+
 .icons {
-  text-align: center;
-  margin: 30%;
-  width: 60%;
+  
+  position: absolute;
+  left: 20%;
+  right: 10%;
+  top: 15%;
+
 }
 
 .projects {
@@ -275,6 +282,21 @@ nav {
 .large {
   height: 300px;
   float: left;
+  margin: 20px;
+}
+
+.desc {
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+#backtwo, #backthree, #backfour, #backone {
+  float: right;
+  font-size: 40px;
+}
+
+.header {
+  font-size: 20px;
 }
 
 @media (max-width: 47.999em) {

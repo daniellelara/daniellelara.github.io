@@ -1,6 +1,6 @@
 $(function () {
     console.log("pure loaded");
-
+    $('#two, #one, #three, #four').hide();
     $( "#about" ).click(function() {
       $( ".box" ).css({'-webkit-transform': 'rotateY(-90deg)'});
       console.log("clicked");
@@ -20,11 +20,62 @@ $(function () {
     });
 
     $( "#alize" ).click(function() {
-      window.scrollBy(0,600);
+      toBottom();
+      $('#two').show();
+      $('#one, #three, #four').hide();
       console.log("clicked again");
     });
 
+    $( "#puzzle" ).click(function() {
+      toBottom();
+      $('#one').show();
+      $('#two, #three, #four').hide();
+      console.log("clicked again");
+    });
 
+    $( "#cross" ).click(function() {
+     toBottom();
+      $('#three').show();
+      $('#two, #one, #four').hide();
+      console.log("clicked again");
+    });
+
+    $( "#dose" ).click(function() {
+      toBottom();
+      $('#four').show();
+      $('#two, #one, #three').hide();
+      console.log("clicked again");
+    });
+
+    $("#backtwo").click(function(){
+        console.log("working??");
+        toTop();
+    });
+
+    $("#backthree").click(function(){
+        console.log("working??");
+        toTop();
+    });
+
+    $("#backfour").click(function(){
+        console.log("working??");
+        toTop();
+    });
+
+    $("#backone").click(function(){
+        console.log("working??");
+        toTop();
+    });
+
+    function toBottom() {
+        $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+         return false;
+    } 
+
+    function toTop() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+         return false;
+    }  
 
     $(window).scroll(function () {
            if ($(this).scrollTop() > 440) { 

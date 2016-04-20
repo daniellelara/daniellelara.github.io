@@ -85,19 +85,54 @@
 
     </div>
     <div class="about">
-      <div class="Alize">
-        <h1>Alize</h1>
+      <div id="two" class="Alize">
+        <p class="header">Alize<p1>
+        <i id="backone" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         <img class="large" src="./images/alize.png">
         <div class="desc">
-          <p>“Combining my love of music and programming, I created a music streaming and download/uplload service with audio player visualization and the ability to share, play and create playlists.  Using postgres, I had 3 models, all many to many relationships. The visualization on the audio players which used a JavaScript API Audiocontext to analyze the track, thereafter plotting the data onto a HTML5 canvas was most problematic I ran into Cors restrictions and only realised on the final day that an audio node can only be connected to 5 audio sources at one time.” </p>
-          <p>Used: Sinatra framework, Ruby, JavaScript, psql, bcrypt, carrierwave, html5 canvas, web audio API audiocontext</p>
-        </div>  
+          <p class="desc">“Combining my love of music and programming, I created a music streaming and download/uplload service with audio player visualization and the ability to share, play and create playlists.  Using postgres, I had 3 models, all many to many relationships. The visualization on the audio players which used a JavaScript API Audiocontext to analyze the track, thereafter plotting the data onto a HTML5 canvas was most problematic I ran into Cors restrictions and only realised on the final day that an audio node can only be connected to 5 audio sources at one time.” </p>
+          <p class="desc">Used: Sinatra framework, Ruby, JavaScript, psql, bcrypt, carrierwave, html5 canvas, web audio API audiocontext</p>
+          <a href="https://serene-castle-66241.herokuapp.com/" target="_blank">demo</a>
+          <a href="https://github.com/daniellelara/Music_App_Project2" target="_blank">github repo</a>
+        </div>
+      </div>  
+      <div id="one" class="Puzzle">
+        <p class="header">Puzzleplay-Offs</h1>
+        <i id="backtwo" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        <img class="large" src="./images/puzzle.png">
+        <div class="desc">
+          <p class="desc">“I designed an online jigsaw puzzle game for two players, with two levels using the draggable and droppable functions from JQuery’s UI library. My biggest challenge on this project was incorporating the shapes of the puzzle pieces and implementing the droppable function for this. ” </p>
+          <p class="desc">Used: JavaScript, Photoshop, Jquery, JqueryUI</p>
+          <a href="https://serene-bayou-36453.herokuapp.com/" target="_blank">demo</a>
+          <a href="https://github.com/daniellelara/Puzzle_Play_Off_WDI_Project_1" target="_blank">github repo</a>
+        </div>    
+      </div>
+      <div id="three" class="Puzzle">
+        <p class="header">Crossrpds</h1>
+        <i id="backthree" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        <img class="large" src="./images/crossroads.png">
+        <div class="desc">
+          <p class="desc">“Created this app as a solution to integrate into our society, the many refugees arriving into our country as well as connecting those that want to help with those that need help. We used node.js as a framework, working in a team of three. After extensive planning,  a colleague and I pair-coded tests for our back-end API using mocha and chai. I set up the API including authorization using bcrypt and JWT. I integrated the Stripe API into the app, assigning each donation to a particular refugee. For this, app it was necessary to have two different authenticated users, a charity and a potential host. This was solved by having one user model, and storing the role, that was a hidden field on the registration form, into local storage, through the payload on login. This method made it very easy to control accessibility on the front-end.”</p>
+          <p class="desc">Used: node.js, JavaScript, TDD, mocha, chai, Google maps API, JWT, Bcrypt, Guardian API, mongoose, Ajax, JQuery,</p>
+          <a href="https://crossroads-wdi.herokuapp.com" target="_blank">demo</a>
+          <a href="https://github.com/amaliacardenas/migmatch/tree/v2" target="_blank">github repo</a>
+        </div>    
+      </div>
+      <div id="four" class="Puzzle">
+        <p class="header">Dose</p>
+        <i id="backfour" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+
+        <img class="large" src="./images/dose.png">
+        <div class="desc">
+          <p class="desc">“I created a dashboard in which users can add widgets to their board. The concept was to add a 'dose' of each source to their board, in turn, eliminating the mess of having many tabs open at once. I used many third party API's in order to create my tools and felt I really came out of this project with a fantastic understanding of AngualrJS. I used websockets, for the 'notes' widget, as well as angular-gridster and an image uploader, which allowed the user to customise the own dashboard choosing the background and the layout.”</p>
+          <p class="desc">Used: Node.js, AngularJS, sockets.io, tfl api, crowd-scores api, guardian api, football-data api, openweaather api, JWT, Oauth, S3, multer, angular-gridster, satellizer, ng-uploader, bluebird</p>
+          <a href="https://wdi-dose.herokuapp.com/" target="_blank">demo</a>
+          <a href="https://github.com/daniellelara/dose" target="_blank">github repo</a>
+        </div>    
       </div>
 
     </div>
-    <div class="contact">
-      <h1>contact</h1>
-    </div>
+    
   </main>
 
 </body>
