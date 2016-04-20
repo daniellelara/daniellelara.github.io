@@ -44,60 +44,57 @@
   </nav>
   <main>
     <div class="portfolio">
-     
-     <div class='box-scene'>
-         <div class='box'>
-             <div class='front face'>
-                 <img id="logo" src="./images/logocube.png">
-             </div>
-             <div class="side face">
-              <img id="me" src="./images/2f25478.jpg">
-              <p class="text">"Welcome! I am Danielle, I began volunteering to design web pages at my day marketing job as well as taking online courses in Ruby and JavaScript. When listening to a TED talk about careers, the lecturer offered the vital advice: to think about the activity or task where you don’t realise time passing and make this your career. It was this advice that has taken me on this journey into web development. I have enjoyed every moment of learning so far, and I am eager to start a position as a full stack developer."</p>
-             </div>
-             <div class="under face">
-              
-             </div>
-             <div class="bottom face">
+      <div class='box-scene'>
+        <div class='box'>
+          <div class='front face'>
+              <img id="logo" src="./images/logocube.png">
+          </div>
+          <div class="side face">
+            <img id="me" src="./images/2f25478.jpg">
+            <p class="text">"Welcome! I am Danielle, I began volunteering to design webpageat my day marketing job as well as taking online courses in Ruby andJavaScriptWhen listening to a TED talk about careers, the lecturer offeredthe vitaadvice: to think about the activity or task where you don’t realisetime passinand make this your career. It was this advice that has taken me onthis journeinto web development. I have enjoyed every moment of learning sofar, and I aeager to start a position as a full stack developer."</p>
+          </div>
+          <div class="under face">
+           
+          </div>
+            <div class="bottom face">
               <div class="icons">
                 <a href="https://twitter.com/daniellelarag" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                 <a href="https://github.com/daniellelara" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
                 <a href="https://uk.linkedin.com/in/daniellegourgey" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                 <a href="mailto:daniellelaragourgey@gmail.com?Subject=Hello" target="_blank"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
-
-              </div>  
+             </div>  
+            </div>
+            <div class="back face">
+             <div class="projects">
+               <div class="all">
+                 <img id="puzzle" class="apps" src="./images/puzzlelogo.png">
+                 <img id="cross" class="apps" src="./images/crossroadslogo.png">
+                 <img id="alize" class="apps" src="./images/alizelogo.png">
+                 <img id="dose" class="apps" src="./images/doselogo.png">
+               </div>
              </div>
-             <div class="back face">
-              <div class="projects">
-                <h1>PROJECTS</h1>
-                <div class="all">
-                  <img id="puzzle" class="apps" src="./images/puzzle.png">
-                  <img id="cross" class="apps" src="./images/crossroads.png">
-                  <img id="alize" class="apps" src="./images/alize.png">
-                  <img id="dose" class="apps" src="./images/dose.png">
-                </div>
-              </div>
-             </div>
-             <div class="below face">
-              <p>below side</p>
-             </div>
-         </div>
+            </div>
+            <div class="below face">
+             <p>below side</p>
+            </div>
+        </div>
      </div>
 
     </div>
     <div class="about">
-      <div id="two" class="Alize">
-        <p class="header">Alize<p1>
+      <div id="two" class="info">
+        <p class="header">Alize</p>
         <i id="backone" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         <img class="large" src="./images/alize.png">
         <div class="desc">
-          <p class="desc">“Combining my love of music and programming, I created a music streaming and download/uplload service with audio player visualization and the ability to share, play and create playlists.  Using postgres, I had 3 models, all many to many relationships. The visualization on the audio players which used a JavaScript API Audiocontext to analyze the track, thereafter plotting the data onto a HTML5 canvas was most problematic I ran into Cors restrictions and only realised on the final day that an audio node can only be connected to 5 audio sources at one time.” </p>
+          <p class="desc">“Combining my love of music and programming, I created a music streaming and download/upload service with audio player visualization and the ability to share, play and create playlists.  Using postgres, I had 3 models, all many to many relationships. The visualization on the audio players used Web API,  Audiocontext to analyze the track, thereafter plotting the data onto a HTML5 canvas was most problematic I ran into Cors restrictions and only realised on the final day that an audio node can only be connected to 5 audio sources at one time.” </p>
           <p class="desc">Used: Sinatra framework, Ruby, JavaScript, psql, bcrypt, carrierwave, html5 canvas, web audio API audiocontext</p>
           <a href="https://serene-castle-66241.herokuapp.com/" target="_blank">demo</a>
           <a href="https://github.com/daniellelara/Music_App_Project2" target="_blank">github repo</a>
         </div>
       </div>  
-      <div id="one" class="Puzzle">
-        <p class="header">Puzzleplay-Offs</h1>
+      <div id="one" class="info">
+        <p class="header">Puzzle Play-Offs</p>
         <i id="backtwo" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         <img class="large" src="./images/puzzle.png">
         <div class="desc">
@@ -107,25 +104,25 @@
           <a href="https://github.com/daniellelara/Puzzle_Play_Off_WDI_Project_1" target="_blank">github repo</a>
         </div>    
       </div>
-      <div id="three" class="Puzzle">
-        <p class="header">Crossrpds</h1>
+      <div id="three" class="info">
+        <p class="header">Crossroads</h1>
         <i id="backthree" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         <img class="large" src="./images/crossroads.png">
         <div class="desc">
-          <p class="desc">“Created this app as a solution to integrate into our society, the many refugees arriving into our country as well as connecting those that want to help with those that need help. We used node.js as a framework, working in a team of three. After extensive planning,  a colleague and I pair-coded tests for our back-end API using mocha and chai. I set up the API including authorization using bcrypt and JWT. I integrated the Stripe API into the app, assigning each donation to a particular refugee. For this, app it was necessary to have two different authenticated users, a charity and a potential host. This was solved by having one user model, and storing the role, that was a hidden field on the registration form, into local storage, through the payload on login. This method made it very easy to control accessibility on the front-end.”</p>
-          <p class="desc">Used: node.js, JavaScript, TDD, mocha, chai, Google maps API, JWT, Bcrypt, Guardian API, mongoose, Ajax, JQuery,</p>
+          <p class="desc">“I Created this app as a solution to integrate, into our society, the many refugees arriving into our country as well as connecting those that want to help with those that need help. We used node.js as a framework, working in a team of three. After extensive planning,  a colleague and I pair-coded tests for our back-end API using Mocha and Chai. I set up the API including authorization using bcrypt and JWT. I integrated the Stripe API into the app, assigning each donation to a particular refugee. For this, app it was necessary to have two different authenticated users, a charity and a potential host. The different roles on login was solved by having one user model, and storing the role, that was a hidden field on the registration form, into local storage through the payload on login and registartion. This method made it very easy to control accessibility on the front-end.”</p>
+          <p class="desc">Used: Node.js, JavaScript, TDD, Mocha, Chai, Google maps API, JWT, Bcrypt, Guardian API, mongoose, Ajax, JQuery, Bluebird</p>
           <a href="https://crossroads-wdi.herokuapp.com" target="_blank">demo</a>
           <a href="https://github.com/amaliacardenas/migmatch/tree/v2" target="_blank">github repo</a>
         </div>    
       </div>
-      <div id="four" class="Puzzle">
+      <div id="four" class="info">
         <p class="header">Dose</p>
         <i id="backfour" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
 
         <img class="large" src="./images/dose.png">
         <div class="desc">
-          <p class="desc">“I created a dashboard in which users can add widgets to their board. The concept was to add a 'dose' of each source to their board, in turn, eliminating the mess of having many tabs open at once. I used many third party API's in order to create my tools and felt I really came out of this project with a fantastic understanding of AngualrJS. I used websockets, for the 'notes' widget, as well as angular-gridster and an image uploader, which allowed the user to customise the own dashboard choosing the background and the layout.”</p>
-          <p class="desc">Used: Node.js, AngularJS, sockets.io, tfl api, crowd-scores api, guardian api, football-data api, openweaather api, JWT, Oauth, S3, multer, angular-gridster, satellizer, ng-uploader, bluebird</p>
+          <p class="desc">“I created a dashboard in which users can add widgets to their board. The concept was to add a 'dose' of each source to their board, in turn, eliminating the mess of having many tabs open at once. I used many third party API's in order to create my tools and felt I really came out of this project with a fantastic understanding of AngularJS. I used websockets for the 'notes' widget, as well as angular-gridster and an image uploader, which allowed the user to customise the own dashboard choosing the background, the layout and the widget sizes.”</p>
+          <p class="desc">Used: Node.js, AngularJS, sockets.io, TFL api, crowd-scores api, guardian api, football-data api, openweather api, JWT, Oauth, S3, multer, angular-gridster, satellizer, ng-uploader, bluebird</p>
           <a href="https://wdi-dose.herokuapp.com/" target="_blank">demo</a>
           <a href="https://github.com/daniellelara/dose" target="_blank">github repo</a>
         </div>    
