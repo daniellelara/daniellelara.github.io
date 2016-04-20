@@ -35,6 +35,7 @@
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="projects">projects</a></li>
                     <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="about">about</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="skills">skills</a></li>
                     <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="contact">contact</a></li>
                 </ul>
             </div>
@@ -51,7 +52,7 @@
           </div>
           <div class="side face">
             <img id="me" src="./images/2f25478.jpg">
-            <p class="text">"Welcome! I am Danielle, I began volunteering to design webpageat my day marketing job as well as taking online courses in Ruby andJavaScriptWhen listening to a TED talk about careers, the lecturer offeredthe vitaadvice: to think about the activity or task where you don’t realisetime passinand make this your career. It was this advice that has taken me onthis journeinto web development. I have enjoyed every moment of learning sofar, and I aeager to start a position as a full stack developer."</p>
+            <p class="text">"Welcome! I am Danielle, I began volunteering to design webpages my day marketing job as well as taking online courses in Ruby andJavaScriptWhen listening to a TED talk about careers, the lecturer offeredthe vitaadvice: to think about the activity or task where you don’t realisetime passinand make this your career. It was this advice that has taken me onthis journeinto web development. I have enjoyed every moment of learning sofar, and I aeager to start a position as a full stack developer."</p>
           </div>
           <div class="under face">
            
@@ -75,52 +76,53 @@
              </div>
             </div>
             <div class="below face">
-             <p>below side</p>
+             <div class="skills">
+               <p>JavaScript</p>
+               <p>Ruby</p>
+               <p>node.js</p>
+
+             </div>
             </div>
         </div>
      </div>
 
     </div>
     <div class="about">
-      <div id="two" class="info">
-        <p class="header">Alize</p>
+      <div id="two">
         <i id="backone" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         <img class="large" src="./images/alize.png">
-        <div class="desc">
-          <p class="desc">“Combining my love of music and programming, I created a music streaming and download/upload service with audio player visualization and the ability to share, play and create playlists.  Using postgres, I had 3 models, all many to many relationships. The visualization on the audio players used Web API,  Audiocontext to analyze the track, thereafter plotting the data onto a HTML5 canvas was most problematic I ran into Cors restrictions and only realised on the final day that an audio node can only be connected to 5 audio sources at one time.” </p>
-          <p class="desc">Used: Sinatra framework, Ruby, JavaScript, psql, bcrypt, carrierwave, html5 canvas, web audio API audiocontext</p>
+        <div class="desc info">
+          <p class="desc">“Combining my love of music and programming, I created a music streaming and download/upload service with audio player visualization and the ability to share, play and create playlists.  Using Postgress, I had 3 models, all many to many relationships. The visualization on the audio players used Web API,  Audiocontext to analyze the track, thereafter plotting the data onto a HTML5 canvas to create the soundwave visual. Audiocontext was my biggest challenge. I had never used it before so was unable to predict the Cors restrictions I ran into. It was only realised on the final day of the project when I discovered that an audio node can only be connected to 5 audio sources at one time.” </p>
+          <p class="desc">Used: Sinatra framework, Ruby, JavaScript, psql, bcrypt, carrierwave, html5 canvas, web audio API, Audiocontext</p>
           <a href="https://serene-castle-66241.herokuapp.com/" target="_blank">demo</a>
           <a href="https://github.com/daniellelara/Music_App_Project2" target="_blank">github repo</a>
         </div>
       </div>  
-      <div id="one" class="info">
-        <p class="header">Puzzle Play-Offs</p>
+      <div id="one">
         <i id="backtwo" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         <img class="large" src="./images/puzzle.png">
-        <div class="desc">
+        <div class="desc info">
           <p class="desc">“I designed an online jigsaw puzzle game for two players, with two levels using the draggable and droppable functions from JQuery’s UI library. My biggest challenge on this project was incorporating the shapes of the puzzle pieces and implementing the droppable function for this. ” </p>
-          <p class="desc">Used: JavaScript, Photoshop, Jquery, JqueryUI</p>
+          <p class="desc">Used: JavaScript, Photoshop, jQuery, jQueryUI</p>
           <a href="https://serene-bayou-36453.herokuapp.com/" target="_blank">demo</a>
           <a href="https://github.com/daniellelara/Puzzle_Play_Off_WDI_Project_1" target="_blank">github repo</a>
         </div>    
       </div>
-      <div id="three" class="info">
-        <p class="header">Crossroads</h1>
+      <div id="three">
         <i id="backthree" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
         <img class="large" src="./images/crossroads.png">
-        <div class="desc">
+        <div class="desc info">
           <p class="desc">“I Created this app as a solution to integrate, into our society, the many refugees arriving into our country as well as connecting those that want to help with those that need help. We used node.js as a framework, working in a team of three. After extensive planning,  a colleague and I pair-coded tests for our back-end API using Mocha and Chai. I set up the API including authorization using bcrypt and JWT. I integrated the Stripe API into the app, assigning each donation to a particular refugee. For this, app it was necessary to have two different authenticated users, a charity and a potential host. The different roles on login was solved by having one user model, and storing the role, that was a hidden field on the registration form, into local storage through the payload on login and registartion. This method made it very easy to control accessibility on the front-end.”</p>
-          <p class="desc">Used: Node.js, JavaScript, TDD, Mocha, Chai, Google maps API, JWT, Bcrypt, Guardian API, mongoose, Ajax, JQuery, Bluebird</p>
+          <p>Used: Node.js, JavaScript, TDD, Mocha, Chai, Google maps API, JWT, Bcrypt, Guardian API, mongoose, Ajax, JQuery, Bluebird</p>
           <a href="https://crossroads-wdi.herokuapp.com" target="_blank">demo</a>
           <a href="https://github.com/amaliacardenas/migmatch/tree/v2" target="_blank">github repo</a>
         </div>    
       </div>
-      <div id="four" class="info">
-        <p class="header">Dose</p>
+      <div id="four">
         <i id="backfour" class="fa fa-arrow-circle-up" aria-hidden="true"></i>
 
         <img class="large" src="./images/dose.png">
-        <div class="desc">
+        <div class="desc info">
           <p class="desc">“I created a dashboard in which users can add widgets to their board. The concept was to add a 'dose' of each source to their board, in turn, eliminating the mess of having many tabs open at once. I used many third party API's in order to create my tools and felt I really came out of this project with a fantastic understanding of AngularJS. I used websockets for the 'notes' widget, as well as angular-gridster and an image uploader, which allowed the user to customise the own dashboard choosing the background, the layout and the widget sizes.”</p>
           <p class="desc">Used: Node.js, AngularJS, sockets.io, TFL api, crowd-scores api, guardian api, football-data api, openweather api, JWT, Oauth, S3, multer, angular-gridster, satellizer, ng-uploader, bluebird</p>
           <a href="https://wdi-dose.herokuapp.com/" target="_blank">demo</a>

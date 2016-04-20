@@ -9,6 +9,10 @@ $(function () {
       $( ".box" ).css({'-webkit-transform': 'rotateX(90deg)'});
       console.log("clicked");
     });
+    $( "#skills" ).click(function() {
+      $( ".box" ).css({'-webkit-transform': 'rotateX(-90deg)'});
+      console.log("clicked");
+    });
     $( "#home" ).click(function() {
       $( ".box" ).css({'-webkit-transform': 'rotateY(0deg)'});
       console.log("clicked");

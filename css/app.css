@@ -126,7 +126,7 @@ nav {
 .portfolio {
   background-color: black;
   width: 100%;
-  height: 900px;
+  height: 1000px;
   margin-top: 55px;
 }
 
@@ -148,10 +148,12 @@ nav {
 
 }
 .text {
-  font-size: 12px;
-  padding: 10px;
+  font-size: 16px;
+  padding: 0 20px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  
+  overflow-y: scroll;
 }
 
 #logo {
@@ -202,7 +204,7 @@ nav {
   -webkit-transform: rotateY(0deg);
   z-index: 2;
   background: #d9d9d9;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 .under {
   -webkit-transform: rotateX(-180deg);
@@ -212,14 +214,14 @@ nav {
   opacity: 0.8;
 }
 .side {
-  background: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(180deg, rgba(139, 132, 133, 0.88) 50%, rgba(213, 205, 205, 0.84) 50%);
   -webkit-transform: rotateY(90deg);
   z-index: 1;
   left: 400px;
 }
 .bottom {
   background: rgba(255, 255, 255, 0.75);
-  -webkit-transform: rotateY(90deg);
+  -webkit-transform: translateZ(-400px) rotateY(-90deg);
   z-index: 1;
 }
 .back {
@@ -229,7 +231,7 @@ nav {
 }
 .below {
   background: rgba(255, 255, 255, 0.75);
-  -webkit-transform: rotateX(-90deg);
+  -webkit-transform: rotateX(90deg) translateY( -400px );
   z-index: 1;
 }
 
@@ -287,6 +289,7 @@ nav {
 .desc {
   margin-top: 40px;
   margin-right: 20px;
+  font-size: 20px;
 }
 
 #backtwo, #backthree, #backfour, #backone {
@@ -299,7 +302,7 @@ nav {
 }
 .info {
   margin: 20px 10px;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .all {
@@ -340,6 +343,14 @@ nav {
       -webkit-transform: rotateX(-90deg) translateZ( 250px );
     }
 
+    .bottom {      
+      -webkit-transform: translateZ(-250px) rotateY(-90deg);    
+    }
+  
+    .below {      
+      -webkit-transform: rotateX(90deg) translateY( -250px );  
+    }
+
     .apps {
       height: 70px;
     }
@@ -353,6 +364,10 @@ nav {
 
     .large {
       height: 100px;
+    }
+
+    .text {
+      font-size: 11px;
     }
     
     
