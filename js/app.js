@@ -1,10 +1,35 @@
 $(function () {
     console.log("pure loaded");
 
+    $( "#about" ).click(function() {
+      $( ".box" ).css({'-webkit-transform': 'rotateY(-90deg)'});
+      console.log("clicked");
+    });
+    $( "#projects" ).click(function() {
+      $( ".box" ).css({'-webkit-transform': 'rotateX(90deg)'});
+      console.log("clicked");
+    });
+    $( "#home" ).click(function() {
+      $( ".box" ).css({'-webkit-transform': 'rotateY(0deg)'});
+      console.log("clicked");
+    });
+
+    $( "#contact" ).click(function() {
+      $( ".box" ).css({'-webkit-transform': 'rotateY(-270deg)'});
+      console.log("clicked again");
+    });
+
+    $( "#alize" ).click(function() {
+      window.scrollBy(0,600);
+      console.log("clicked again");
+    });
+
+
+
     $(window).scroll(function () {
-           if ($(this).scrollTop() > 100) { 
+           if ($(this).scrollTop() > 440) { 
                //change yes to no
-               $('.pure-menu-heading').html('developer | explorer | creator');
+               $('.pure-menu-heading').html('<img id="thumb" src="./images/lococircle.png">');
            } else {
                //set h1 text to yes
                $('.pure-menu-heading').html('danielle lara gourgey');
