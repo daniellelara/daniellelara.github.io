@@ -26,22 +26,22 @@ a.pure-menu-link, .pure-menu-heading {
 
 .pure-menu-link:hover {
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0);
 }
 
 .pure-menu-link:active {
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0);
 }
 
 pure-menu-link:focus {
   color: white;
-  background-color: black;
+  background-color: transparent;
 }
 
 .pure-menu-heading:hover {
   color: white;
-  background-color: black;
+  background-color: transparent;
 }
 
 nav {
@@ -57,6 +57,10 @@ nav {
   font-family: "Microsoft Yi Baiti";
 
 }
+
+.pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
+    background-color: rgba(0, 0, 0, 0);
+    }
 .custom-wrapper {
   font-family: "Microsoft Yi Baiti";
   background-color:  rgba(7, 7, 7, 0);
