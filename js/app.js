@@ -3,29 +3,34 @@ $(function () {
     $('#two, #one, #three, #four').hide();
 
     $( "#about" ).click(function() {
-      $( ".box" ).removeClass("skills-click contact-click home-click projects-click")
+      $( ".box" ).removeClass("skills-click contact-click home-click projects-click play-click")
       $( ".box" ).addClass("about-click")
       console.log("clicked");
     });
 
     $( "#projects" ).click(function() {
-      $( ".box" ).removeClass("skills-click contact-click home-click about-click")
+      $( ".box" ).removeClass("skills-click contact-click home-click about-click play-click")
       $( ".box" ).addClass("projects-click")
     });
 
     $( "#skills" ).click(function() {
-      $( ".box" ).removeClass("about-click contact-click home-click projects-click")
+      $( ".box" ).removeClass("about-click contact-click home-click projects-click play-click")
       $( ".box" ).addClass("skills-click")
     });
 
     $( "#home" ).click(function() {
-      $( ".box" ).removeClass("about-click contact-click skills-click projects-click")
+      $( ".box" ).removeClass("about-click contact-click skills-click projects-click play-click")
       $( ".box" ).addClass("home-click")
     });
 
     $( "#contact" ).click(function() {
-      $( ".box" ).removeClass("about-click skills-click home-click projects-click")
+      $( ".box" ).removeClass("about-click skills-click home-click projects-click play-click")
         $( ".box" ).addClass("contact-click")
+    });
+
+    $( "#play" ).click(function() {
+      $( ".box" ).removeClass("about-click skills-click home-click projects-click contact-click")
+        $( ".box" ).addClass("play-click")
     });
 
     $( "#alize" ).click(function() {

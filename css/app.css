@@ -219,11 +219,10 @@ nav {
   opacity: 0.85;
 }
 .under {
-  -webkit-transform: rotateX(-180deg);
-  z-index: 1;
+ /* -webkit-transform: rotateX(-180deg);
+  z-index: 1;*/
   background: rgba(232, 13, 13, 0.71);
-  -webkit-transform: translateZ(-400px);
-  
+ -webkit-transform: rotateX(180deg) translateY(-400px) translateZ(400px);
 }
 .side {
   background: linear-gradient(180deg, rgba(139, 132, 133, 0.88) 50%, rgba(213, 205, 205, 0.84) 50%);
@@ -264,6 +263,10 @@ nav {
 
 .home-click {
   -webkit-transform: rotateY(0deg);
+}
+
+.play-click {
+  -webkit-transform: rotateX(180deg) translateY(-200px) translateZ(200px);
 }
 
 #thumb {
