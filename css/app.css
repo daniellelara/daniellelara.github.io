@@ -368,6 +368,12 @@ nav {
 
 }  
 
+#next {
+  background: rgba(233, 50, 45, 0.36);
+  border-radius: 0;
+  color: #EAE3EA;
+}
+
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
@@ -507,7 +513,7 @@ and (orientation : landscape) {
       height: 250px;
     }
     .under {
-      -webkit-transform: translateZ(-250px);
+         -webkit-transform: rotateX(180deg) translateY(-250px) translateZ(250px);
     }
     .side {
       -webkit-transform: rotateY(90deg) translateZ(250px);
