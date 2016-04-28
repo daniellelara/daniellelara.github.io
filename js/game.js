@@ -9,6 +9,7 @@ $(function () {
   
     $('#next').click(function(){ 
       $( "#word" ).val(''); 
+      $('#next').hide();
       if (i > 0) {
         var word = Math.floor(Math.random() * i);
         console.log(word);

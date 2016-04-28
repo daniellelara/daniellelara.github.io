@@ -357,6 +357,17 @@ nav {
   margin: 3px;
 }
 
+.game-container {
+  margin: 20%;
+}
+
+#start {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+
+}  
+
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
@@ -374,7 +385,9 @@ and (orientation : landscape) {
       text-align: left;
 
     }
-
+    .console {
+      display: inline-block;
+    }
     a.pure-menu-link, .pure-menu-heading {
         font-size: 18px;
      }   
@@ -395,7 +408,7 @@ and (orientation : landscape) {
       height: 250px;
     }
     .under {
-      -webkit-transform: translateZ(-250px);
+      -webkit-transform: rotateX(180deg) translateY(-250px) translateZ(250px);
     }
     .side {
       -webkit-transform: rotateY(90deg) translateZ(250px);
@@ -446,6 +459,7 @@ and (orientation : landscape) {
     .contact-click {
       -webkit-transform: rotateY(90deg) translateX(-100px) translateZ(70px);
     }
+
     .icons {
         position: absolute;
         left: 15%;
