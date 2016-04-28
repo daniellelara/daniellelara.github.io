@@ -1,7 +1,7 @@
 $(function () {
   $('#answer').hide();
 
-  var words = ["HTML", "Javascript", "Ruby", "angular", "array", "function", "class", "programming"];
+  var words = ["HTML", "javascript", "Ruby", "angular", "array", "function", "class", "programming"];
   console.log("connected");
   var i = words.length;
 
@@ -11,7 +11,10 @@ $(function () {
       if (i > 0) {
         var word = Math.floor(Math.random() * i);
         console.log(word);
-        $('#start').html(words[word]);
+        var wordReal = words[word];
+        var shuffled = wordReal.split('').sort(function(){return 0.5-Math.random()}).join('');
+        console.log(shuffled);
+        $('#start').html(shuffled);
         $('#answer').show();
         $( "#answer" ).submit(function( event ) {
           event.preventDefault();
@@ -19,7 +22,8 @@ $(function () {
           if ($( "input" ).val() == words[word]) {
             $('#start').html('next');
             $('#message').html('correct');
-            words.splice(word, 1);
+            word = words.splice(word, 1);
+            i = words.length;
             console.log(words);
           }
           else {
