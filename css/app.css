@@ -360,7 +360,8 @@ nav {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
-and (orientation : landscape) { nav {
+and (orientation : landscape) { 
+  nav {
       position: relative;
       top: 0;
       left: 0;
@@ -378,10 +379,10 @@ and (orientation : landscape) { nav {
         font-size: 18px;
      }   
 
-    .custom-toggle {
+    /*.custom-toggle {
       display: block;
       font-size: 12px;
-    }
+    }*/
     #logo{
       height: 250px;
     }
